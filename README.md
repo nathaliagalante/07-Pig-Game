@@ -1,4 +1,4 @@
-# Pig-Game
+# Pig game
 ## Mini game developed to practice javascript skills.
 
 - 2 player game with the purpouse of get the highest score
