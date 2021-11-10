@@ -16,6 +16,8 @@ const btnHold = document.querySelector('.btn--hold');
 let scores, currentScore, activePlayer, playing;
 
 const initGame = () => {
+    document.querySelector(`.player--${activePlayer}`).classList.remove('player--winner');
+    
     scores = [0, 0];
     currentScore = 0;
     activePlayer = 0;
@@ -27,7 +29,6 @@ const initGame = () => {
     current1El.textContent = 0;
     
     diceEl.classList.add('hidden');
-    document.querySelector(`.player--${activePlayer}`).classList.remove('player--winner');
     player0.classList.add('player--active');
     player1.classList.remove('player--active');
 }
